@@ -1,0 +1,15 @@
+
+<h1> Your answer is : <%= @search_term %> </h1>
+
+<%= link_to "Ask a new question", ask_path, class: "btn btn-primary"  %>
+
+
+<%if @search_term.downcase == "i am going to work right now!"%>
+<%="Good."%>
+<%elsif @search_term.end_with?("?")%>
+<%="Silly question, get dressed and go to work!"%>
+<%elsif @search_term.end_with?("?")%>
+<%="Silly question, get dressed and go to work!"%>
+<%else%>
+<%="I dont care, get dressed and go to work!"%>
+<%end%>
